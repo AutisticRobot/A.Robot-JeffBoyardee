@@ -1,0 +1,8 @@
+/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/bin/Debug/Nuclear Pasta.dll
+/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/bin/Debug/Nuclear Pasta.pdb
+/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/obj/Debug/Nuclear Pasta.csproj.AssemblyReference.cache
+/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/obj/Debug/Nuclear Pasta.AssemblyInfoInputs.cache
+/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/obj/Debug/Nuclear Pasta.AssemblyInfo.cs
+/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/obj/Debug/Nuclear Pasta.csproj.CoreCompileInputs.cache
+/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/obj/Debug/Nuclear Pasta.dll
+/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/obj/Debug/Nuclear Pasta.pdb

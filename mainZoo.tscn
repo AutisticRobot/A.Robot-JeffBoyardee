@@ -1,3 +1,30 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://jẽff.png" type="Texture" id=1]
+[ext_resource path="res://jẽff.cs" type="Script" id=2]
+[ext_resource path="res://Background.png" type="Texture" id=3]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="jẽff" type="AnimatedSprite" parent="."]
+position = Vector2( 270, 226 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Background" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 960, 540 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 3 )
