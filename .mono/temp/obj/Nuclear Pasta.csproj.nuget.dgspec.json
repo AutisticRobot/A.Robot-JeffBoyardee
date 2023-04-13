@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj": {}
+    "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj": {}
   },
   "projects": {
-    "/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj": {
+    "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
+        "projectUniqueName": "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
         "projectName": "Nuclear Pasta",
-        "projectPath": "/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
-        "packagesPath": "/home/minecraftserver/.nuget/packages/",
-        "outputPath": "/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/obj/",
+        "projectPath": "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
+        "packagesPath": "/home/awtisticrobot/.nuget/packages/",
+        "outputPath": "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/minecraftserver/.config/NuGet/NuGet.Config"
+          "/home/awtisticrobot/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net472"

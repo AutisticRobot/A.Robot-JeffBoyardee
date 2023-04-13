@@ -11,7 +11,7 @@ public int speed;
 public bool paused = false;
 
 
-public AnimatedSprite jẽff;
+//public AnimatedSprite jẽff;
 public Vector2 screen;
 
 public override void _Ready()
