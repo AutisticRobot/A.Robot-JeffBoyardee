@@ -16,6 +16,7 @@ public Vector2 screen;
 
 public override void _Ready()
 {
+    jẽff.position = new Vector2(1000,400);
     
 }
 
