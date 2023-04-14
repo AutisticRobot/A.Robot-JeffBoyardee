@@ -11,12 +11,13 @@ public int speed;
 public bool paused = false;
 
 
-//public AnimatedSprite jẽff;
+public AnimatedSprite jeff;
 public Vector2 screen;
 
 public override void _Ready()
 {
-    jẽff.position = new Vector2(1000,400);
+    jeff = GetParent().GetNode<AnimatedSprite>("jẽff");
+    jeff.Position = new Vector2(1000,400);
     
 }
 

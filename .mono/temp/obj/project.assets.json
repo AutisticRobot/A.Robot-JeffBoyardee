@@ -8,19 +8,19 @@
     ".NETFramework,Version=v4.7.2": []
   },
   "packageFolders": {
-    "/home/awtisticrobot/.nuget/packages/": {}
+    "/home/minecraftserver/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
+      "projectUniqueName": "/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
       "projectName": "Nuclear Pasta",
-      "projectPath": "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
-      "packagesPath": "/home/awtisticrobot/.nuget/packages/",
-      "outputPath": "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/obj/",
+      "projectPath": "/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
+      "packagesPath": "/home/minecraftserver/.nuget/packages/",
+      "outputPath": "/home/minecraftserver/Documents/GitHub/A.Robot-JeffBoyardee/.mono/temp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/awtisticrobot/.config/NuGet/NuGet.Config"
+        "/home/minecraftserver/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net472"
