@@ -37,6 +37,15 @@ private void movePlayer(float delta)
     if(Input.IsActionPressed("up")){
         mov.y -= delta;
     }
+    if(Input.IsActionPressed("down")){
+        mov.y += delta;
+    }
+    if(Input.IsActionPressed("left")){
+        mov.x -= delta;
+    }
+    if(Input.IsActionPressed("right")){
+        mov.x += delta;
+    }
 
     jeff.Position += mov.Normalized() * speed;
 
