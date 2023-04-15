@@ -22,6 +22,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
+speed = 5
 
 [node name="Background" type="Sprite" parent="."]
 show_behind_parent = true

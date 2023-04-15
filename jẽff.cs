@@ -26,10 +26,20 @@ public override void _Process(float delta)
 {
     if(!paused)
     {
-        //move code
-        Vector2 mov = new Vector2(0,0);
+        movePlayer(delta);
     }
 }
 
+private void movePlayer(float delta)
+{
+    Vector2 mov = new Vector2(0,0);
+
+    if(Input.IsActionPressed("up")){
+        mov.y -= delta;
+    }
+
+    jeff.Position += mov.Normalized() * speed;
+
+}
 
 }
