@@ -15,14 +15,14 @@ animations = [ {
 [node name="Node2D" type="Node2D"]
 
 [node name="jẽff" type="AnimatedSprite" parent="."]
-position = Vector2( 270, 226 )
+position = Vector2( 938, 508 )
 scale = Vector2( 4, 4 )
 frames = SubResource( 1 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
-speed = 5
+speed = 20
 
 [node name="Background" type="Sprite" parent="."]
 show_behind_parent = true
