@@ -18,4 +18,12 @@ public class Lion : Sprite
 //  {
 //      
 //  }
+private void ai(float range)
+{
+    Vector2 target = new Vector2(0,0);
+    target.x = (float)GD.RandRange(-1,1);
+    target.y = (float)GD.RandRange(-1,1);
+    float distance = (float)GD.RandRange(0,range);
+    target * distance;
+}
 }
