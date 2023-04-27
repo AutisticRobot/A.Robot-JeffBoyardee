@@ -4,8 +4,18 @@ using System;
 public class ai : Node
 {
 
+//constructor
+public ai()
+{
+
+}
+
 public Vector2 findValidPos(Vector2 pos, float range)
 {
+    //testing values
+    //Vector2 pos = new Vector2(100,100);
+    //float range = 250;
+
     Vector2 tar;
     float dis;
     bool isValid = false;

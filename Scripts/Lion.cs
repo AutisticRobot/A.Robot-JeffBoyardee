@@ -7,13 +7,13 @@ public class Lion : Sprite
     public float range = 100;
     [Export]
     public int speed = 10;
+    ai lionAI = new ai();
     
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
         Vector2 validPos;
-        //validPos = ai.findValidPos(Position, range);//fix this
-        GD.Print("test");
+        validPos = lionAI.findValidPos(Position, range);
     }
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
