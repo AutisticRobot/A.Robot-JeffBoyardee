@@ -3,18 +3,21 @@ using System;
 
 public class ai : Node
 {
+    Sprite mainBody;
 
 //constructor
-public ai()
+public ai(Sprite mainBody)
 {
+    this.mainBody = mainBody;
+}
 
+public override void _Process(float delta)
+{
+    
 }
 
 public Vector2 findValidPos(Vector2 pos, float range)
 {
-    //testing values
-    //Vector2 pos = new Vector2(100,100);
-    //float range = 250;
 
     Vector2 tar;
     float dis;
@@ -41,5 +44,15 @@ public Vector2 findValidPos(Vector2 pos, float range)
     }else{
         return pos;
     }
+}
+
+public void setPos(Vector2 pos)
+{
+    mainBody.Position = pos;
+}
+
+public Vector2 getPos()
+{
+    return mainBody.Position;
 }
 }
