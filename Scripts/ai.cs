@@ -11,14 +11,12 @@ public ai(Sprite mainBody)
     this.mainBody = mainBody;
 }
 
-public override void _Process(float delta)
-{
-    
-}
 
-public Vector2 findValidPos(Vector2 pos, float range)
+public Vector2 findValidPos(){this.findValidPos(mainBody.range);}
+public Vector2 findValidPos(float range)
 {
 
+    Vector2 pos = mainBody.Position;
     Vector2 tar;
     float dis;
     bool isValid = false;
@@ -46,13 +44,10 @@ public Vector2 findValidPos(Vector2 pos, float range)
     }
 }
 
-public void setPos(Vector2 pos)
+public void walkTo(Vector2 target)
 {
-    mainBody.Position = pos;
+
 }
 
-public Vector2 getPos()
-{
-    return mainBody.Position;
-}
+
 }
