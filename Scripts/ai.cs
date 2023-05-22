@@ -5,6 +5,7 @@ public class ai : Node
 {
     Sprite mainBody;
 
+
 //constructor
 public ai(Sprite mainBody)
 {
@@ -12,7 +13,7 @@ public ai(Sprite mainBody)
 }
 
 
-public Vector2 findValidPos(){this.findValidPos(mainBody.range);}
+public Vector2 findValidPos(){return this.findValidPos(100);}
 public Vector2 findValidPos(float range)
 {
 
@@ -44,9 +45,11 @@ public Vector2 findValidPos(float range)
     }
 }
 
-public void walkTo(Vector2 target)
+public Vector2 walkToVel(Vector2 target)
 {
-
+    Vector2 velocity;
+    velocity = target - mainBody.Position;
+    return velocity.Normalized();
 }
 
 
