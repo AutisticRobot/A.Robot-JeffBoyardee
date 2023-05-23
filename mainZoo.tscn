@@ -91,3 +91,4 @@ tile_data = PoolIntArray( -1, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -6
 [node name="Lion" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1312, 610 )
 range = 400.0
+speed = 50

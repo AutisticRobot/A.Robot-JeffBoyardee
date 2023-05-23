@@ -3,13 +3,15 @@ using System;
 
 public class ai : Node
 {
-    Sprite mainBody;
+    //Sprite mainBody;
+    public Vector2 pos;
 
 
 //constructor
-public ai(Sprite mainBody)
+public ai()//simply passing in each varrible individualy until i Find a better sulution( even if it is only in other games)
 {
-    this.mainBody = mainBody;
+    //this.pos = pos;//none is set in constuctor for now.
+    //this.mainBody = mainBody;
 }
 
 
@@ -17,7 +19,7 @@ public Vector2 findValidPos(){return this.findValidPos(100);}
 public Vector2 findValidPos(float range)
 {
 
-    Vector2 pos = mainBody.Position;
+    //Vector2 pos = mainBody.Position;
     Vector2 tar;
     float dis;
     bool isValid = false;
@@ -45,11 +47,11 @@ public Vector2 findValidPos(float range)
     }
 }
 
-public Vector2 walkToVel(Vector2 target)
+public Vector2 walkToVec(Vector2 target)
 {
     Vector2 velocity;
-    velocity = target - mainBody.Position;
-    return velocity.Normalized();
+    velocity = target - pos;//mainBody.Position;
+    return velocity;
 }
 
 
