@@ -54,5 +54,31 @@ public Vector2 walkToVec(Vector2 target)
     return velocity;
 }
 
+public bool checkOverlap(Vector2 pos, Vector2 target, Vector2 range)
+{
+    bool xOverlap = false;
+    bool yOverlap = false;
+
+    if(pos.x - target.x <= range.x && target.x - pos.x <= range.x)
+    {
+        GD.Print(pos);
+        GD.Print(target);
+        GD.Print(range);
+        xOverlap = true;
+    }
+    if(pos.y - target.y <= range.y && target.y - pos.y <= range.y)
+    {
+        yOverlap = true;
+    }
+
+    if(xOverlap && yOverlap)
+    {
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
 
 }

@@ -12,7 +12,10 @@ public int speed = 10;
 
 
 private String state = "idle";
-private Vector2 Target;
+
+[Export]
+public Vector2 Target;
+private int idleDur = 60;
 
 
 private ai lionAI = new ai();//simply passing in each varrible individualy until i Find a better sulution( even if it is only in other games)
@@ -33,12 +36,21 @@ public void mainLoop(float delta)
     switch(state)
     {
         case "idle":
-            Target = lionAI.findValidPos(range);
-            state = "walk";
+            idleDur--;
+            if(idleDur <= 0)
+            {
+                Target = lionAI.findValidPos(range);
+                state = "walk";
+            }
         break;
 
         case "walk":
             this.Position += lionAI.walkToVec(Target).Normalized() * delta * speed;
+            if(lionAI.checkOverlap(this.Position, Target, new Vector2(speed,speed)))
+            {
+                idleDur = 60;
+                state = "idle";
+            }
         break;
     }
 }
