@@ -61,9 +61,6 @@ public bool checkOverlap(Vector2 pos, Vector2 target, Vector2 range)
 
     if(pos.x - target.x <= range.x && target.x - pos.x <= range.x)
     {
-        GD.Print(pos);
-        GD.Print(target);
-        GD.Print(range);
         xOverlap = true;
     }
     if(pos.y - target.y <= range.y && target.y - pos.y <= range.y)
