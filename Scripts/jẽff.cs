@@ -10,6 +10,8 @@ public int speed;
 [Export]
 public bool paused = false;
 
+[Export]
+public PackedScene bullet;
 
 public AnimatedSprite jeff;
 public Vector2 screen;
@@ -34,6 +36,10 @@ public override void _Process(float delta)
 
 private void movePlayer(float delta)
 {
+    if(Input.IsActionPressed("click"))
+    {
+        shoot();
+    }
     pos = jeff.Position;
 
     Vector2 mov = new Vector2(0,0);
@@ -57,6 +63,13 @@ private void movePlayer(float delta)
 
     jeff.Position = pos;
 
+}
+
+private void shoot()
+{
+    KinematicBody2D shot = (KinematicBody2D)bullet.Instance();
+    shot.Position = GetNode<Sprite>("Gun").GlobalPosition;
+    GetParent().AddChild(shot);
 }
 
 }
