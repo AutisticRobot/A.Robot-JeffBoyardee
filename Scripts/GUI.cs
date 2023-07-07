@@ -1,8 +1,8 @@
 using Godot;
 using System;
 
-private node pause;
-private Sprite burger;
+public node pauseMenu;
+public Button burger;
 
 public class GUI : CanvasLayer
 {
@@ -13,8 +13,8 @@ public class GUI : CanvasLayer
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        pause = GetNode<node>("PauseMenu");
-        burger = GetNode<Sprite>("MenuHamburger");
+        pauseMenu = GetNode<node>("PauseMenu");
+        burger = GetNode<Button>("MenuHamburger");
     }
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -22,4 +22,10 @@ public class GUI : CanvasLayer
 //  {
 //      
 //  }
+
+    public void _on_MenuHamburger_pressed()
+    {
+        pauseMenu.Show();
+        burger.Hide();
+    }
 }
