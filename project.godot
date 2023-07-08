@@ -13,6 +13,10 @@ config_version=4
 config/name="Nuclear Pasta"
 config/icon="res://icon.png"
 
+[autoload]
+
+Global="*res://Scripts/Global.cs"
+
 [display]
 
 window/size/width=1920

@@ -1,11 +1,14 @@
 using Godot;
 using System;
 
-public node pauseMenu;
-public Button burger;
-
 public class GUI : CanvasLayer
 {
+
+    public Control pauseMenu;
+    public Button burger;
+    public AnimatedSprite jeff;
+
+
     // Declare member variables here. Examples:
     // private int a = 2;
     // private string b = "text";
@@ -13,8 +16,9 @@ public class GUI : CanvasLayer
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        pauseMenu = GetNode<node>("PauseMenu");
+        pauseMenu = GetNode<Control>("PauseMenu");
         burger = GetNode<Button>("MenuHamburger");
+        jeff = GetParent().GetNode<AnimatedSprite>("jẽff");
     }
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -27,5 +31,6 @@ public class GUI : CanvasLayer
     {
         pauseMenu.Show();
         burger.Hide();
+        jeff.paused = true;
     }
 }
