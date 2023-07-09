@@ -1,12 +1,12 @@
 using Godot;
 using System;
 
-public class GUI : CanvasLayer
+public partial class GUI : CanvasLayer
 {
 
     public Control pauseMenu;
     public Button burger;
-    public AnimatedSprite jeff;
+    public AnimatedSprite2D jeff;
 
 
     // Declare member variables here. Examples:
@@ -18,7 +18,7 @@ public class GUI : CanvasLayer
     {
         pauseMenu = GetNode<Control>("PauseMenu");
         burger = GetNode<Button>("MenuHamburger");
-        jeff = GetParent().GetNode<AnimatedSprite>("jẽff");
+        jeff = GetParent().GetNode<AnimatedSprite2D>("jẽff");
     }
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -31,6 +31,6 @@ public class GUI : CanvasLayer
     {
         pauseMenu.Show();
         burger.Hide();
-        jeff.paused = true;
+        Global.paused = true;
     }
 }

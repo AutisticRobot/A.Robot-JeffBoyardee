@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class Lion : Sprite
+public partial class Lion : Sprite2D
 {
 
 

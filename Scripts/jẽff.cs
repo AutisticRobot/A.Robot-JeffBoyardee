@@ -1,25 +1,22 @@
 using Godot;
 using System;
 
-public class jẽff : AnimatedSprite
+public partial class jẽff : AnimatedSprite2D
 {
 
 [Export]
 public int speed;
 
 [Export]
-public bool paused = false;
-
-[Export]
 public PackedScene bullet;
 
-public AnimatedSprite jeff;
+public AnimatedSprite2D jeff;
 public Vector2 screen;
 private Vector2 pos;
 
 public override void _Ready()
 {
-    jeff = GetParent().GetNode<AnimatedSprite>("jẽff");
+    jeff = GetParent().GetNode<AnimatedSprite2D>("jẽff");
     jeff.Position = new Vector2(1000,400);
     pos = jeff.Position;
     
@@ -28,7 +25,7 @@ public override void _Ready()
 
 public override void _Process(float delta)
 {
-    if(!paused)
+    if(!Global.paused)
     {
         movePlayer(delta);
     }
@@ -45,19 +42,19 @@ private void movePlayer(float delta)
     Vector2 mov = new Vector2(0,0);
 
     if(Input.IsActionPressed("up")){
-        mov.y -= delta;
+        mov.y -= 1;
     }
     if(Input.IsActionPressed("down")){
-        mov.y += delta;
+        mov.y += 1;
     }
     if(Input.IsActionPressed("left")){
-        mov.x -= delta;
+        mov.x -= 1;
     }
     if(Input.IsActionPressed("right")){
-        mov.x += delta;
+        mov.x += 1;
     }
 
-    pos += mov.Normalized() * speed;
+    pos += mov.Normalized() * speed * delta;
     pos.y = Mathf.Clamp(pos.y, 128, 952);
     pos.x = Mathf.Clamp(pos.x, 64, 1855);
 
@@ -67,8 +64,8 @@ private void movePlayer(float delta)
 
 private void shoot()
 {
-    KinematicBody2D shot = (KinematicBody2D)bullet.Instance();
-    shot.Position = GetNode<Sprite>("Gun").GlobalPosition;
+    CharacterBody2D shot = (CharacterBody2D)bullet.Instance();
+    shot.Position = GetNode<Sprite2D>("Gun").GlobalPosition;
     GetParent().AddChild(shot);
 }
 

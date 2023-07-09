@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public class ai : Node
+public partial class ai : Node
 {
     //Sprite mainBody;
     public Vector2 pos;
@@ -29,9 +29,9 @@ public Vector2 findValidPos(float range)
     {
         
         tar = new Vector2(0,0);
-        dis = (float)GD.RandRange(0,range);
-        tar.x = (float)GD.RandRange(-1,1);
-        tar.y = (float)GD.RandRange(-1,1);
+        dis = (float)GD.RandfRange(0,range);
+        tar.x = (float)GD.RandfRange(-1,1);
+        tar.y = (float)GD.RandfRange(-1,1);
         tar *= dis;
         tar += pos;
         isValid = ( 0 <= tar.x && tar.x <= 1920 );
