@@ -1,18 +1,20 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=3 format=3 uid="uid://rwthby2s588n"]
 
-[ext_resource path="res://Lion.png" type="Texture2D" id=1]
-[ext_resource path="res://Scripts/Lion.cs" type="Script" id=2]
+[ext_resource type="Texture2D" uid="uid://c8ebrvjnwqwt5" path="res://Lion.png" id="1"]
+[ext_resource type="Script" path="res://Scripts/Lion.cs" id="2"]
 
 [node name="Lion" type="Sprite2D"]
-position = Vector2( 1184, 606 )
-scale = Vector2( 4, 4 )
-texture = ExtResource( 1 )
-script = ExtResource( 2 )
+texture_filter = 1
+position = Vector2(1184, 606)
+scale = Vector2(4, 4)
+texture = ExtResource("1")
+script = ExtResource("2")
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Label" type="Label" parent="."]
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -21,6 +23,5 @@ offset_left = -25.75
 offset_top = -22.25
 offset_right = 14.25
 offset_bottom = -8.25
-scale = Vector2( 0.5, 0.5 )
+scale = Vector2(0.5, 0.5)
 text = "Lion"
-align = 1

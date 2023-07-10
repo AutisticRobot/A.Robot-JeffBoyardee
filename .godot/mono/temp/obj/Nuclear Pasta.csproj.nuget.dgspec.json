@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj": {}
+  },
+  "projects": {
+    "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
+        "projectName": "Nuclear Pasta",
+        "projectPath": "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
+        "packagesPath": "/home/awtisticrobot/.nuget/packages/",
+        "outputPath": "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/.godot/mono/temp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/awtisticrobot/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Godot.SourceGenerators": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "GodotSharp": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "GodotSharpEditor": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/212/sdk/7.0.305/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

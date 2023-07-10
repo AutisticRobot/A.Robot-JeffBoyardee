@@ -1,0 +1,33 @@
+{
+  "version": 2,
+  "dgSpecHash": "NjoijPIbxDJ9GWg64WTOiEIlGzW9SBJy91aP1TZXa/pHlqDkaqBy7bBY9GTP0GiM6COeU13GFramMi/GopKGQg==",
+  "success": false,
+  "projectFilePath": "/home/awtisticrobot/Documents/GitHub/A.Robot-JeffBoyardee/Nuclear Pasta.csproj",
+  "expectedPackageFiles": [
+    "/home/awtisticrobot/.nuget/packages/godot.sourcegenerators/4.1.0/godot.sourcegenerators.4.1.0.nupkg.sha512",
+    "/home/awtisticrobot/.nuget/packages/godotsharp/4.1.0/godotsharp.4.1.0.nupkg.sha512",
+    "/home/awtisticrobot/.nuget/packages/godotsharpeditor/4.1.0/godotsharpeditor.4.1.0.nupkg.sha512",
+    "/home/awtisticrobot/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.3/microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "/home/awtisticrobot/.nuget/packages/microsoft.netframework.referenceassemblies.net472/1.0.3/microsoft.netframework.referenceassemblies.net472.1.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package GodotSharp 4.1.0 is not compatible with net472 (.NETFramework,Version=v4.7.2). Package GodotSharp 4.1.0 supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "GodotSharp",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package GodotSharpEditor 4.1.0 is not compatible with net472 (.NETFramework,Version=v4.7.2). Package GodotSharpEditor 4.1.0 supports: net6.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "GodotSharpEditor",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2"
+      ]
+    }
+  ]
+}
