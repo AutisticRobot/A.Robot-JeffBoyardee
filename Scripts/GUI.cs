@@ -33,4 +33,10 @@ public partial class GUI : CanvasLayer
         burger.Hide();
         Global.paused = true;
     }
+    public void _on_Resume()
+    {
+        pauseMenu.Hide();
+        burger.Show();
+        Global.paused = false;
+    }
 }
