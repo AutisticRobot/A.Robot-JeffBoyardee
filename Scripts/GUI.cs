@@ -3,11 +3,9 @@ using System;
 
 public partial class GUI : CanvasLayer
 {
-
     public Control pauseMenu;
     public Button burger;
     public AnimatedSprite2D jeff;
-
 
     // Declare member variables here. Examples:
     // private int a = 2;
@@ -21,11 +19,11 @@ public partial class GUI : CanvasLayer
         jeff = GetParent().GetNode<AnimatedSprite2D>("jẽff");
     }
 
-//  // Called every frame. 'delta' is the elapsed time since the previous frame.
-//  public override void _Process(float delta)
-//  {
-//      
-//  }
+    //  // Called every frame. 'delta' is the elapsed time since the previous frame.
+    //  public override void _Process(float delta)
+    //  {
+    //
+    //  }
 
     public void _on_MenuHamburger_pressed()
     {
@@ -33,6 +31,7 @@ public partial class GUI : CanvasLayer
         burger.Hide();
         Global.paused = true;
     }
+
     public void _on_Resume()
     {
         pauseMenu.Hide();
